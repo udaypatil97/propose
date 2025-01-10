@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width,initial-scale=1.0" />
+    <title>Ask Her Out</title>
+
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <audio src="sad.mp3" autoplay></audio>
+</head>
+
+<body>
+    <div class="container">
+        <div class="" data-postid="15974530976611222074" data-share-method="host" data aspect ratio="1.26973" data
+            width="100%">
+            <a href="#"><img src="https://media.tenor.com/3bDvSVpiwjoAAAAi/peach-goma-phone.gif" width="200px"></a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <h1> aik na kiti baav khates </h1>
+        <div class="btn">
+            <a href="yes.html">Yes 😘💕</a>
+            <a href="#" id="moverandom" onmouseover="move()" disabled="true">No</a>
+            <br>
+            <br>
+        </div>
+    </div>
+    </div>
+    <script>
+        const no = document.getElementById("moverandom");
+        console.log(no);
+
+        function sad(){
+            const audio = new Audio("./sad.mp3");
+            audio.play();
+        }
+
+        function move() {
+            console.log("hover");
+            let buttonX = Math.floor(Math.random() * 200) + "px";
+            let buttonY = Math.floor(Math.random() * 200) + "px";
+
+            console.log(buttonX, buttonY);
+            no.style.position = "relative"
+            no.style.background = "#d96962";
+            no.style.color = "white";
+            no.innerText = "sorry";
+            no.style.top = buttonX;
+            no.style.left = buttonY;
+        }
+
+    </script>
+</body>
+
+</html>
